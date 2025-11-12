@@ -1,0 +1,22 @@
+Informe:
+
+    Edición: 
+        * Pasar el Jupyter Notebook por un corrector. Por ejemplo, donde dice truncación debió decir        
+        truncamiento. Revisar uso de comas.
+
+    Conclusión: La conclusión necesita más trabajo, hay que contar un poco cómo les fue con el método que empleaste 
+    para la estimación de los espectros y las ventanas que usaste para las tres señales que consideramos. Hablando 
+    de la varianza y la resolución espectral.
+
+Código: 
+    * Corre sin problemas.
+Desarrollo:
+    * No queda claro que tengas que usar Welch para las tres señales, por qué no Blackman-Tukey.
+    * Falta un análisis sobre el Leakage de cada método: Periodograma ventaneado, Welch y Blackman-Tukey.
+    * No está justificado el uso de las ventanas Hanning o Flattop.
+    * Falta considerar en la estimación del ancho de banda, qué es más relevante en la estimación del 
+      espectro: Varianza, Resolución o Leakage.
+    * La señal PPG es mejor graficarla en un rango temporal menor.
+    
+Sugerencias:
+    * Si los gráficos de los espectros están en Hz, por qué no graficar las señales en segundos?
