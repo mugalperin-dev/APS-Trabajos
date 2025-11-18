@@ -1,8 +1,11 @@
 Informe:
 
+***************
+  CORREGIDO
     Edición: 
         * Pasar el Jupyter Notebook por un corrector. Por ejemplo, donde dice truncación debió decir        
         truncamiento. Revisar uso de comas.
+******************************************
 
     Conclusión: La conclusión necesita más trabajo, hay que contar un poco cómo les fue con el método que empleaste 
     para la estimación de los espectros y las ventanas que usaste para las tres señales que consideramos. Hablando 
@@ -10,13 +13,42 @@ Informe:
 
 Código: 
     * Corre sin problemas.
+
+****************
+A CORREGIR    
 Desarrollo:
     * No queda claro que tengas que usar Welch para las tres señales, por qué no Blackman-Tukey.
     * Falta un análisis sobre el Leakage de cada método: Periodograma ventaneado, Welch y Blackman-Tukey.
+
+
+Los argumentos en favor del método de Welch no implican que el mismo sea mejor que el método de 
+Blakman-Tukey para el caso de la estimación del ancho de banda. No creo que esté bien usar el mismo métodos
+para todas las señales. Hubiese estado mejor probar los tres métodos para una de las señales por lo menos y 
+comparar las estimaciones del ancho de banda.
+Y Particularmente este argumento no es del todo correcto:
+"Además, en comparación con Blackman–Tukey, Welch resulta más adecuado para señales reales ya que 
+no depende de la longitud de la señal para obtener una buena estimación y evita la necesidad de 
+calcular y truncar la autocorrelación, proceso que introduce un compromiso entre resolución y 
+reducción del leakage."
+
+***************************
+CORREGIDO
     * No está justificado el uso de las ventanas Hanning o Flattop.
+*********************************************************************
+
+*************************
+A CORREGIR
+
     * Falta considerar en la estimación del ancho de banda, qué es más relevante en la estimación del 
       espectro: Varianza, Resolución o Leakage.
+
+No está hecho este análisis, entiendo que es difícil de hacer.
+******************************************      
+
+*****************
+CORREGIDO
     * La señal PPG es mejor graficarla en un rango temporal menor.
-    
+***********************************************
+
 Sugerencias:
     * Si los gráficos de los espectros están en Hz, por qué no graficar las señales en segundos?
